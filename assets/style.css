@@ -8,6 +8,9 @@
 }
 
 html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
   font-size: calc(12pt + 1vw);
   line-height: 1.6;
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
@@ -16,8 +19,17 @@ html {
   overflow-x: hidden; 
   scroll-behavior: smooth;
 }
-body{
-  margin:0; padding:0;
+
+body {
+  margin: 0
+  color: hsla(0, 0%, 0%, 0.8);
+  font-weight: normal;
+  word-wrap: break-word;
+  font-kerning: normal;
+  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
+  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
+  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
+  font-feature-settings: "kern", "liga", "clig", "calt";
 }
 
 * {
@@ -133,8 +145,10 @@ a{
 }
 
 .bookcover{
-  max-height: 75vh;
+  height: 75vh;
   width: auto;
+  max-width: calc(100vw - 3.2rem);
+  max-height: calc((100vw - 3.2rem ) / 600 * 900 );
   box-shadow: 3px 3px 10px #000;
 }
 
@@ -148,7 +162,6 @@ a{
 
 .bandcamp{
   max-width: calc(100vw - 3.2rem);
-  box-shadow: 3px 3px 10px #000;
 }
 
 
