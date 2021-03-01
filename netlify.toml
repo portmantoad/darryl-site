@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/video"
+  to = "https://player.vimeo.com/video/516306913"
+  status = 301
