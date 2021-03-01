@@ -8,13 +8,16 @@
 }
 
 html {
-  font-size: calc(14px + 1vw);
+  font-size: calc(12pt + 1vw);
   line-height: 1.6;
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
   overflow-x: hidden; 
   scroll-behavior: smooth;
+}
+body{
+  margin:0; padding:0;
 }
 
 * {
@@ -46,18 +49,22 @@ a{
   object-position: 5% 100%;
   width: 100vw;
   height: 100vh;
+  max-height: -webkit-fill-available;
   position: fixed;
   top: 0;
   left: 0;
+  z-index: -2;
 }
 
 .scrim{
   width: 100vw;
   height: 100vh;
+  max-height: -webkit-fill-available;
   position: fixed;
   top: 0;
   left: 0;
-  background: rgba(49,24,2,0.75)
+  background: rgba(49,24,2,0.75);
+  z-index: -1;
 }
 
 .section{
@@ -72,6 +79,7 @@ a{
 
 .section--intro{
   height:100vh;
+  max-height: -webkit-fill-available;
 }
 
 .title{
@@ -134,7 +142,9 @@ a{
 
 .videoplayer{
   width: calc(80vh / 1138 * 640); 
+  max-width: calc(100vw - 3.2rem);
   height: 80vh;
+  max-height: calc((100vw - 3.2rem ) * 1138 / 640 );
   box-shadow: 3px 3px 10px #000;
 }
 
