@@ -11,7 +11,7 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font-size: calc(12pt + 1vw);
+  font-size: calc(11px + 1vw);
   line-height: 1.6;
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
   box-sizing: border-box;
@@ -84,29 +84,30 @@ a{
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 1.6rem 0;
+  padding: 3.2rem 0;
 }
 
 .section--intro{
   height:100vh;
   max-height: -webkit-fill-available;
+  padding-bottom: 4.8rem;
 }
 
 .title{
   line-height: 1.35;
   color: #fff;
   margin-top: 0;
-  font-size: 2rem;
+  font-size: 2.25rem;
   text-shadow: 1px 1px 1px #000;
   font-family: 'Squealer', sans-serif;
 }
 
 .title--intro{
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 .title__smaller{
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 .title--credits{
@@ -118,20 +119,21 @@ a{
 }
 
 .button{
-  -webkit-box-shadow: inset -3px -3px 6px 3px rgba(255,255,255,0.35), -3px -3px 6px 3px rgba(0,0,0,0.35), inset 3px 3px 6px 3px rgba(0,0,0,0.35), 3px 3px 6px 3px rgba(255,255,255,0.35); 
-  box-shadow: inset -3px -3px 6px 3px rgba(255,255,255,0.35), -3px -3px 6px 3px rgba(0,0,0,0.35), inset 3px 3px 6px 3px rgba(0,0,0,0.35), 3px 3px 6px 3px rgba(255,255,255,0.35);
+  font-size: 1.5rem;
+  -webkit-box-shadow: inset -0.125em -0.125em 0.25em 0.125em rgba(255,255,255,0.35), -0.125em -0.125em 0.25em 0.125em rgba(0,0,0,0.35), inset 0.125em 0.125em 0.25em 0.125em rgba(0,0,0,0.35), 0.125em 0.125em 0.25em 0.125em rgba(255,255,255,0.35); 
+  box-shadow: inset -0.125em -0.125em 0.25em 0.125em rgba(255,255,255,0.35), -0.125em -0.125em 0.25em 0.125em rgba(0,0,0,0.35), inset 0.125em 0.125em 0.25em 0.125em rgba(0,0,0,0.35), 0.125em 0.125em 0.25em 0.125em rgba(255,255,255,0.35);
   border-radius: 5px;
   font-family: 'Squealer', sans-serif;
   background-color: #cacaca;
   padding: 0.6rem 1.2rem;
-  margin: 1rem;
+  margin: 1em;
   text-decoration: none;
 }
 
 
 
 .appBadge {
-    width: 10rem;
+    width: 12rem;
     display: block;
     margin: 0;
     cursor: pointer;
@@ -191,4 +193,5 @@ ul.nobullets{
 
 ul.nobullets li{
   display: block;
+  font-size: .8em;
 }
