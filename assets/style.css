@@ -49,9 +49,8 @@ a{
   object-position: 5% 100%;
   width: 100vw;
   height: 100vh;
-  max-height: -webkit-fill-available;
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
   z-index: -2;
 }
@@ -59,9 +58,8 @@ a{
 .scrim{
   width: 100vw;
   height: 100vh;
-  max-height: -webkit-fill-available;
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
   background: rgba(49,24,2,0.75);
   z-index: -1;
@@ -155,6 +153,7 @@ a{
 
 
 .credits{
+  flex-shrink: 0;
   background: #f5f2dc;
   box-shadow: 3px 3px 10px #000;
   border-radius: 2px;
